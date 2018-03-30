@@ -1,0 +1,356 @@
+@media screen and (min-width: 300px) and (max-width: 495px) { 
+
+    :root{
+        --myOrange: #F58321;
+        --myGray: #605E5E;
+        --myWhite: #FFFFFF;
+        --myBlack: #000000;
+        --myAgua: aqua;
+    }
+    
+         
+    
+    /*
+        MARGIN-LEFT AND MARGIN-RIGHT MAKES IT CENTER, IF YOU REMOVE, THERE ARE WHITE SPACE IN EITHER SIDE
+        OVERFLOW HIDDEN TO HIDE THE NEEDINESS TO SCROLL RIGHT
+        SET THE FONT FOR THE ENTIRE HTML AND BODY
+    */
+        html, body{
+            margin-left:-10px;
+            margin-right:-10px;
+            overflow-x: hidden;
+            font-family: 'Montserrat', sans-serif;
+        }
+
+    /* 
+        NAVIGATION PANEL, SET THE BACKGROUND COLOR TO GRAY AND TEXT COLOR TO WHITE
+    */
+        .navigation {
+            background-color: var(--myGray);  
+            color: var(--myWhite);
+            padding-top: 1em;
+
+            /* SET IT TO APPEAR ON TOP OF THE BROWSER ALL THE TIME */
+            position: fixed;
+            top: 0px;
+            width: 100%;
+            z-index: 9999;
+            display: none;
+        }
+
+    /* SET HOW FAR APART THE NAVIGATION BUTTON FROM EACH OTHER */
+        .navigation ul li{
+            width: 23%;
+            font-size: .9em;
+        }
+
+    /* WHAT HAPPEN WITH ALL THE HYPERLINK*/
+        a {
+            text-decoration: none;
+            color: var(--myWhite);
+        }
+
+        a:hover {
+            color: var(--myOrange);
+            transition: 0.8s;
+            cursor: pointer;
+            text-decoration: none;
+        }
+
+    /* THE LANDING PAGE */ 
+        #head h1{
+            font-size: 7vw;
+            line-height: 1.5em;
+            letter-spacing: -.2vw;
+            font-weight: 700; 
+            color: var(--myWhite);
+        }
+
+        /*to make the first text in the vertical center */
+        .verticalAlignHeader{
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            width: 100%;
+            height: 33%;
+            margin: auto;
+        }
+
+        /* to make the type effect in the vertical center */
+        .afterVerticalAlignTyping{
+            position: absolute;
+            top: 24%;
+            bottom: 0;
+            left: 0;
+            right: ;
+            width: 100%;
+            height: 33%;
+            margin: auto;
+        }
+
+
+        /* to make the button in the center */
+        .afterVerticalAlignTypingBTN{
+            position: absolute;
+            top: 14%;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            width: 55.5%;
+            height: 9%;
+            margin: auto;
+            background-color: transparent;
+            font-size: 4vw;
+            color: var(--myWhite);
+            font-weight: 800;
+            border: 2px solid var(--myOrange);
+            border-radius: 10px;
+            transition: 0.7s;
+        }
+
+        .afterVerticalAlignTypingBTN:hover{
+            background: var(--myWhite);
+            transition: 0.7s;
+            color: var(--myOrange);
+            border: 2px solid var(--myWhite);
+        }
+
+        /* LEARN MORE ABOUT WHAT I DO CSS */
+        .lastText{
+            position: absolute;
+            top: 110%;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            width: 80%;
+            height: 30%;
+            margin: auto;
+            font-size: 5.5vw;
+            font-weight: 400;
+            color: var(--myWhite);
+        }
+
+        .lastText:hover{
+            position: absolute;
+            top: 110%;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            width: 80%;
+            height: 30%;
+            margin: auto;
+            text-shadow: 0 0 10px rgba(255, 255, 255, 1);
+            transition: 0.5s;
+        }
+
+        /* TO MAKE THE CHEVRON IN THE BOTTOM */
+        .chevron{
+            position: absolute;
+            top: 120%;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            width: 80%;
+            height: 30%;
+            margin: auto;
+            color: var(--myWhite);
+        }
+
+        /* EXPLANATION OF ABOUT ME SECTION */
+        .photo{
+            margin-top: 1.5em;
+        }
+        .explanation {
+            text-align: justify;
+            margin-left: em;
+            margin-top: 1em
+        }
+    
+        p.explanation {
+            font-size: 1em;
+        }
+
+        /*EXPLANATION OF EACH PROJECT */
+        .explanationProject {
+            width: 100%;
+            margin: 0 auto;
+            margin-top: 1em;
+            text-align: center;
+            font-size: 1.1em;
+        }
+
+    /* CONTACT SECTION: BACKGROUND COLOR + TEXT COLOR */
+        .contact{
+            background-color: var(--myOrange);  
+            color: var(--myWhite);
+        }
+
+        .contact p{
+            color: black;
+            font-size: 1.2em;
+        }
+
+        .contact button{
+            color:black;
+            font-size: 1.2em;
+        }
+
+    /* FOOTER SECTION: BACKGROUND COLOR */
+        .footer{
+            background-color: var(--myGray);
+        }
+    
+        .footer p{
+            text-align: center;
+            margin-top: 0.7em;
+            font-size: 1.1em;
+            color: white;
+        }
+        
+        .footerSocMed{
+            color: white;
+            font-size: 1.1em;
+            text-align: center;
+            margin-top: 0.7em;
+            margin-bottom: 0.5em;
+        }
+
+    /* SOME WHITE SPACE*/
+    .space {
+        /*visibility: hidden;*/
+        height: 0.3em;
+    }
+
+    /* LONG HORIZONTAL LINE */
+    .line {
+        background-color: transparent;
+        border-top: var(--myOrange);
+        border-width: 1px;
+        border-style: solid;
+        border-bottom: none;
+        border-right: none;
+        border-left: none;
+    }
+
+    /* SHORT HORIZONTAL LINE */
+    .smallLine{
+        background-color: transparent;
+        border-top: var(--myGray);
+        border-style: solid;
+        border-bottom: none;
+        border-right: none;
+        border-left: none;
+        width: 17%;
+        margin: 0 auto;
+        margin-top: 1.6%;
+        border-width: .1em;
+    }
+
+    /*SEE IT ONLINE CSS*/
+    .seeOnline{
+        background-color: var(--myOrange);
+        font-size: 100%;
+    }
+    
+    .seeOnline:hover{
+        background-color: var(--myWhite);
+        transition: 0.8s;
+        border-color: var(--myOrange);
+    }
+    
+    /*LEARN MORE CSS */
+    .learnMore:hover{
+        background-color: var(--myAgua);
+        border-color: transparent;
+    }
+    
+    .learnMore{
+        transition: 0.8s;
+        font-size: 100%;
+        color: black;
+        background-color: transparent;
+        border-color: var(--myBlack)
+    }
+    
+    /* MODAL CSS */
+        #myImg {
+            border-radius: 5px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        #myImg:hover {opacity: 0.7;}
+
+        /* The Modal (background) */
+        .modal {
+            display: none; /* Hidden by default */
+            position: fixed; /* Stay in place */
+            z-index: 1; /* Sit on top */
+            padding-top: 100px; /* Location of the box */
+            left: 0;
+            top: 0;
+            width: 100%; /* Full width */
+            height: 100%; /* Full height */
+            overflow: auto; /* Enable scroll if needed */
+            background-color: rgb(0,0,0); /* Fallback color */
+            background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+        }
+
+        /* Modal Content (image) */
+        .modal-content {
+            margin: auto;
+            display: block;
+            width: 80%;
+            max-width: 700px;
+        }
+
+        /* Caption of Modal Image */
+        #caption {
+            margin: auto;
+            display: block;
+            width: 80%;
+            max-width: 700px;
+            text-align: center;
+            color: #ccc;
+            padding: 10px 0;
+            height: 150px;
+        }
+
+        /* Add Animation */
+        .modal-content, #caption {    
+            -webkit-animation-name: zoom;
+            -webkit-animation-duration: 0.6s;
+            animation-name: zoom;
+            animation-duration: 0.6s;
+        }
+
+        @-webkit-keyframes zoom {
+            from {-webkit-transform:scale(0)} 
+            to {-webkit-transform:scale(1)}
+        }
+
+        @keyframes zoom {
+            from {transform:scale(0)} 
+            to {transform:scale(1)}
+        }
+
+        /* The Close Button */
+        .close {
+            position: absolute;
+            top: 55px;
+            right: 45px;
+            color: #f1f1f1;
+            font-size: 5vw;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        .close:hover, .close:focus {
+            color: #bbb;
+            text-decoration: none;
+            cursor: pointer;
+        }
+    /* END OF MODAL CSS */
+}
