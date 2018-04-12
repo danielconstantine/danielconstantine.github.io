@@ -1,0 +1,252 @@
+<!doctype html>
+<html>
+    <head>
+        <title>CUNY HACKATHON SPRING 2018</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="css/main.css">
+        <style>
+            @font-face{
+                font-family: CUNY;
+                src: url(font/UniversLTStd-Bold.otf);
+                
+            }
+            
+            @font-face {
+                font-family: CUNYsmall;
+                src: url(font/UniversLTStd.otf);
+            }
+            
+            @font-face{
+                font-family: title;
+                src: url(font/Gibson-Bold.ttf);
+            }
+            
+            /*STARTS qualifications section */
+            .qualifications {
+                background-image: url(img/college_background.png);
+                color: var(--gray);
+                width: 100vw;
+                padding-top: 100px;
+                padding-bottom: 100px;
+            }
+            
+            
+            @media (min-width: 767px) and (max-width: 1325px) { 
+                #title{
+                    font-size: 4em;
+                }
+                
+                .floatLeft{
+                    width: 100%;
+                }
+            
+            }
+            
+             @media (min-aspect-ratio: 16/9) {
+              .fullscreen-bg__video {
+                height: 300%;
+                top: -100%;
+              }
+            }
+
+            @media (max-aspect-ratio: 16/9) {
+              .fullscreen-bg__video {
+                width: 300%;
+                left: -100%;
+              }
+            }
+
+            /* for phone 767px*/
+            @media (max-width: 767px) { 
+              .fullscreen-bg {
+                background: url('img/background-phone-transp.png') center center / cover no-repeat;
+              }
+
+              .fullscreen-bg__video {
+                display: none;
+              }
+                
+                #title{
+                    font-size: 3em;
+                }
+                
+                
+                .floatLeft{
+                    width: 100%;
+                }
+              
+            }
+            
+            @media (max-width: 500px) { 
+                #title{
+                    font-size: 1.5em;
+                    line-height: 1em;
+                }
+                
+                #date{
+                    font-size: 1em;
+                }
+                
+                #address{
+                    font-size: 1em;
+                }
+                
+                .floatLeft{
+                    width: 100%;
+                }
+                
+                footer{
+                    font-size: 0.7em;
+                }
+                
+                .white-center img{
+                    width: 100%;
+                }
+                
+                #quali{
+                    font-size: 1.8em;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <div id="video">
+             <video loop muted autoplay class="fullscreen-bg__video">
+                <source src="video/background10percent.mp4" type="video/mp4">
+            </video>
+        </div>
+        <header class= "fullscreen-bg">
+            <div class="header-center">
+                <img src="img/cuny_logo.png" height="60em;">
+                <p class="lines">|</p>
+                <h2 id="date" style="color: var(--yellow)">FRIDAY, APRIL 27 - SUNDAY, APRIL 29</h2>
+                <h1 id="title">CUNY HACKATHON</h1>
+                <h2 id="address">NEWMAN LIBRARY - BARUCH COLLEGE 151 EAST 25TH STREET, 6TH FLOOR, NEW YORK. NY</h2>
+                <p class="lines">.</p>
+                <button class="rsvp">RSVP</button>
+            </div>
+            
+        </header>
+         <div class="dark">
+             <div class="dark-center">
+                <h1 style="font-size: 2.5em; line-height: 1; font-family: title; color: var(--yellow)"><strong>THEME: HACK GOTHAM</strong></h1>
+                <h2 style="font-size: 2em; line-height: 1.5em;">Become the superhero that NYC needs</h2>
+                <p style="line-height: 1em; font-family: CUNYsmall">Solve a problem that can make life better for you and your fellow New Yorkers</p>
+            </div>
+        </div>
+        <div class="yellow">
+            <div class="yellow-center">
+                <h1 style="font-size: 2.5em; line-height: 1; font-family: title; font-weight: 600;"><strong>ABOUT</strong></h1>
+                <h2 style="font-size: 1.3em; line-height: 1.5em;">A chance for you to come in and change the way New Yorkers live and interact with technology.</h2>
+                <h2 style="font-size: 1.3em; line-height: 1.5em;">We have an awesome weekend lined up for you and some cool prizes that every hacker would love to go home with.</h2>
+            </div>    
+        </div>
+            
+        
+        <div class="white">
+            <div class="white-center">
+                <h1 style="font-size: 2.5em; line-height: 1; font-family: title; font-weight: 600; color:var(--gray)"><strong>PRIZES</strong></h1>
+                
+                <div style="visibility: hidden">.</div>
+                <div >
+                    <div class="floatLeft">
+                        <img src="img/headset.jpg" width="250px">
+                        <strong><p>JAYBIRD HEADPHONES</p></strong>
+                        <strong><p>For those long subway rides</p></strong>
+                    </div>
+                    <div class="floatLeft">
+                        <img src="img/raspberri.jpg" width="250px">
+                        <strong><p>RASPBERRY PI CANA-KIT</p></strong>
+                        <strong><p>To build your own computer</p></strong>
+                    </div>
+                    <div class="floatLeft">
+                        <img src="img/mta.png" width="250px">
+                        <strong><p>MONTHLY METROCARD</p></strong>
+                        <strong><p>Because you have places to be & things to build</p></strong>
+                    </div>
+                </div>  
+                <div class="clearboth"></div>
+            </div>
+        </div>
+        
+        <div class="qualifications">
+            <div class="qualifications-center">
+                <h1 id="quali"><strong>QUALIFICATIONS</strong></h1>
+                <h2 style="font-size: 1.3em; line-height: 1.5em; color:var(--gray)">You must be a CUNY student to participate (Student ID's are required at check-in).</h2>
+                <h2 style="font-size: 1.3em; line-height: 1.5em; color:var(--gray)">You need to hack on all three days</h2>
+            </div>
+        </div>
+        
+        <div class="yellow">
+            <div class="yellow-center">
+                <h1 style="font-size: 2.5em; line-height: 1; font-weight: 600; font-family: title;"><strong>WHEN?</strong></h1>
+                <h2 style="font-size: 1.3em; line-height: 1.5em;">Friday, APRIL 27 @6pm - Sunday, APRIL 29 @6pm</h2>
+            </div>    
+        </div>
+        
+        <div class="white">
+            <div class="white-center">
+                <h1 style="font-size: 2.5em; line-height: 1; font-weight: 600; color:var(--gray) font-family: title;"><strong>SPONSORS</strong></h1>
+                <p style="background-color: var(--yellow); color: var(--yellow); font-size: 2px;">.</p>
+                <div style="visibility: hidden">.</div><div style="visibility: hidden">.</div>
+                <img src="img/sponsor.png" width="45%">
+            </div>
+        </div>
+        
+        <div class="dark">
+            <div class="dark-center">
+                <h1 style="color: var(--yellow); text-align: left">NEWMAN LIBRARY - BARUCH COLLEGE</h1>
+                <p style="font-family: CUNYsmall, sans-serif; text-align: left">Newman Library - Baruch College  <span style="color:orange">|</span>  151 East 25th Street, 6th Floor,  <span style="color:orange">|</span>  New York NY   <span style="color:orange">|</span>  United States</p>
+                
+                <div id="map" style="width:100%;height:400px;"></div>
+            
+            </div>
+        
+        </div>
+        <div class="yellow">
+            <div class="yellow-center">
+                <div class="padding-up">
+                    <img src="img/twitter-icon.png" width="19em">
+                    <span style="padding-left: 10px;"></span>
+                    <img src="img/facebook.png" width="20em">
+                </div>
+                <div style="visibility: hidden">.</div>
+                <p class="smallLines">.</p>
+                <h2 style="font-size: 1.3em; line-height: 0em;">#CUNYHACKATHON</h2>
+                <p class="smallLines">.</p>
+                <div class="padding-down"></div>
+            </div>    
+        </div>
+        
+        
+        <footer>
+            <div class="footer">
+                <a href="https://splashthat.com/sites/view/cunyhackathon.splashthat.com" target="_blank">Replicated and modified</a> by <span style="color: var(--yellow)">Daniel Constantine</span>. 2018
+            </div>
+        
+        </footer>
+        
+        
+        <script>
+           function myMap() {           
+                  var myCenter = new google.maps.LatLng(40.740467,-73.983385);
+                  var mapCanvas = document.getElementById("map");
+                  var mapOptions = {center: myCenter, zoom: 15};
+                  var map = new google.maps.Map(mapCanvas, mapOptions);
+                  var marker = new google.maps.Marker({position:myCenter});
+                  marker.setMap(map);
+
+                  // Zoom to 9 when clicking on marker
+                  google.maps.event.addListener(marker,'click',function() {
+                    map.setZoom(18);
+                    map.setCenter(marker.getPosition());
+                  });
+            }
+            
+            
+        </script>
+
+        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDGRyTRDEDOGN2Vw3-Leip2Ta1A0crznOY&callback=myMap"></script>
+
+    </body>
+</html>
